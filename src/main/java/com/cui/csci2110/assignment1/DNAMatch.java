@@ -1,9 +1,21 @@
 package com.cui.csci2110.assignment1;
 
 import java.io.*;
-import java.util.Scanner;
-public class DNAMatch{
 
+
+
+import java.util.Scanner;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+/**
+ * 
+ * @author cuirongfeng
+ *
+ */
+public class DNAMatch{
+	private static final Logger logger = LoggerFactory.getLogger(DNAMatch.class);
+	
 	public static void main(String[] args) throws IOException{
 		Scanner input  = new Scanner(System.in);
 		System.out.print("Enter the filename to read from: ");
@@ -21,6 +33,12 @@ public class DNAMatch{
 		executionTime = endTime - startTime;
 		System.out.println("Execution time is " + executionTime + " millisecs");
 	}
+	/**
+	 * 
+	 * @param s1  
+	 * @param s2
+	 * @return
+	 */
 	public static int findSame(String s1, String s2) {
 		int times = 0;
 		for (int i = 0; i <= s1.length() - s2.length(); i++) {
