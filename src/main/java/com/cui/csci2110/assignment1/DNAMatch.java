@@ -18,6 +18,7 @@ public class DNAMatch{
 	
 	public static void main(String[] args) throws IOException{
 		Scanner input  = new Scanner(System.in);
+		logger.debug("s");
 		System.out.print("Enter the filename to read from: ");
 		String filename = input.nextLine();
 		String s1 = new Scanner(new File(filename)).useDelimiter("\\A").next(); //Read all the text file in one time

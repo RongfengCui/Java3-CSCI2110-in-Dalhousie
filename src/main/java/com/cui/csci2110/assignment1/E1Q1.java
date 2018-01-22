@@ -1,5 +1,9 @@
 package com.cui.csci2110.assignment1;
 import java.util.Scanner;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 public class E1Q1{
